@@ -1,0 +1,41 @@
+Language: Cpp
+
+ColumnLimit: 120
+
+UseTab: ForContinuationAndIndentation
+TabWidth: 4
+IndentWidth: 4
+AccessModifierOffset: -4
+ContinuationIndentWidth: 4
+
+SortIncludes: false # handled by clang-tidy
+
+BinPackArguments: false
+BinPackParameters: OnePerLine
+
+InsertBraces: false
+InsertNewlineAtEOF: true
+
+AlignAfterOpenBracket: BlockIndent
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: MultiLine
+  AfterFunction: false
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+
+AlignTrailingComments: false
+AlignOperands: true
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+
+AllowShortBlocksOnASingleLine: Always
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: true
+
+IndentCaseLabels: true
