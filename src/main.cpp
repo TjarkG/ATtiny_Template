@@ -1,9 +1,5 @@
-//
-// Created by tjark on 27.05.23.
-//
-
-#include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/io.h>
 #include <util/delay.h>
 
 FUSES = {
@@ -28,11 +24,13 @@ int main() {
 
 	sei();
 
+	constexpr auto delay_time_s{500};
+
 	// ReSharper disable once CppDFAEndlessLoop
 	while (true) {
-		_delay_ms(500);
+		_delay_ms(delay_time_s);
 		PORTA.OUTSET = PIN7_bm;
-		_delay_ms(500);
+		_delay_ms(delay_time_s);
 		PORTA.OUTCLR = PIN7_bm;
 	}
 }

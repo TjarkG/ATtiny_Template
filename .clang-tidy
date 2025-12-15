@@ -1,0 +1,38 @@
+Checks: '
+*,
+-hicpp-deprecated-headers,
+-hicpp-no-array-decay,
+-hicpp-signed-bitwise,
+-altera-unroll-loops,
+-llvmlibc-implementation-in-namespace,
+-llvmlibc-callee-namespace,
+-modernize-deprecated-headers,
+-modernize-loop-convert,
+-modernize-macro-to-enum,
+-modernize-use-auto,
+-modernize-use-bool-literals,
+-modernize-use-integer-sign-comparison,
+-modernize-use-nullptr,
+-modernize-use-trailing-return-type,
+-modernize-use-using,
+-readability-identifier-length,
+-readability-implicit-bool-conversion,
+-*-core.FixedAddressDereference,
+-cppcoreguidelines-pro-type-union-access,
+-cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+-cppcoreguidelines-pro-bounds-constant-array-index,
+-cppcoreguidelines-pro-bounds-pointer-arithmetic,
+-unknown-attribute-external-visible,
+-*-suspicious-enum-usage,
+-*-pro-type-reinterpret-cast,
+-*-struct-pack-align,
+-*-avoid-c-arrays,
+-*-inline-function-decl,
+-*-easily-swappable-parameters,
+'
+
+CheckOptions:
+  - key: readability-magic-numbers.IgnorePowersOf2IntegerValues
+    value: true
+  - key: cppcoreguidelines-avoid-magic-numbers.IgnorePowersOf2IntegerValues
+    value: true
